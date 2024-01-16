@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navigation section */
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    margin-bottom: 32px;
+    padding: 10px;
+    z-index: 50;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container .logo-container img{
+    height: 100px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bar-icon{
+    font-size: 30px;
+    /* margin-right: 10px; */
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease in ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+}
+/* hero section */
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tag{
+    background-color: rgb(7, 169, 77);
+    padding: 5px;
+    font-size: 13px;
+    /* width: 180px; */
+    align-self: flex-start;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+
+}
+.hero-content h1{
+    font-size:62px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.explore-btn{
+    background-color: rgb(247, 165, 58);
+    font-size: 15px;
+    align-self: flex-start;
+}
+/* Feature */
+
+.fetures{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.feture h3{
+    font-size: 20px;
+}
+.feture:hover{
+transition: 0.2s ease-in-out;
+box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+
+}
+.feture{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.feture img{
+    width: 80px;
+}
+.divider{
+    border: 2px solid rgb(231, 224, 224);
+    margin: 50px 50px;
+}
+
+/* Menu Section */
+.menu{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 20px;
+    margin: 20px 0;
+}
+.menu .tag{
+    align-self: center;
+}
+.menu h2{
+    text-align: center;
+}
+.card-body{
+    overflow: auto;
+}
+.card{
+    width: 300px;
+    height: 500px;
+    margin:30px;
+    justify-content: center;
+    border-radius: 10px;
+    float: left;
+}
+.card-img-top{
+    height: 200px;
+    width: 350px;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+/* .item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+} */
+
+/* Footer Section */
+
+footer{
+    background-color:rgb(254, 240, 222);
+}
+.footer-container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.link-list h3{
+    margin-bottom: 10px;
+    color: grey;
+}
+.news-letter{
+    margin-bottom: 10px;
+    color: grey;
+}
+.link-list ul{
+    list-style: none;
+}
+.link-list ul li{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.footer-logo img{
+    height: 100px;
+}
+.news-letter input{
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+.icon-container{
+    display: flex;
+    gap: 15px;
+    color: black;
+    font-size: 32px;
+}
+.icon-container .icon:hover{
+    color: gray;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+@media (max-width:780px){
+    .nav{
+        width: 50%;
+    }
+    .hero{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .hero image{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .hero img{
+        width: 80%;
+    }
+    .hero-content{
+        gap: 10px;
+        padding: 10px;
+    }
+    .hero-content h1{
+        font-size: 32px;
+    }
+    .fetures{
+        flex-direction: column;
+    }
+    .card{
+        justify-content: center;
+    }
+    .footer-container{
+        flex-direction: column;
+        padding: 10px;
+    }
+}
